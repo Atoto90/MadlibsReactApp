@@ -6,6 +6,8 @@ import {
 } from 'reactstrap';
 import _ from 'lodash';
 
+import MadlibContent from './madlib_content';
+
 function MadlibInput(props) {
     return (
         <Col md="3" className="input-wrapper">
@@ -108,7 +110,8 @@ class MadlibForm extends Component {
                                 {this.renderButton()}
                             </Col>
                         </Row>
-                    </form>              
+                    </form>
+                    <MadlibContent data={this.state}/>              
                 </Card>
             </div>
 
